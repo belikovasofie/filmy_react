@@ -1,0 +1,9 @@
+.film-group {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0 10px 0;
+}
+
+.film-group__image {
+  width: 92px;
+}
