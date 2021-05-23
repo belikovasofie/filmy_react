@@ -1,0 +1,15 @@
+.option {
+  width: 33.3%;
+  padding: 20px;
+  position: relative;
+}
+.option img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
