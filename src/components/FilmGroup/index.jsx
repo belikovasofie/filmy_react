@@ -15,7 +15,8 @@ const FilmGroup = ({ data }) => {
             }
           />
           <h3>
-            {film.title} ({film.release_date.slice(0, 4)})
+            {film.title}
+            {film.release_date && ` (${film.release_date.slice(0, 4)})`}
           </h3>
         </div>
       ))}
