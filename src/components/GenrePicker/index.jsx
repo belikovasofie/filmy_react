@@ -3,7 +3,7 @@ import genreGroups from '../../data/genres';
 import GenreOption from '../GenreOption';
 import './style.css';
 
-const GenrePicker = () => {
+const GenrePicker = ({ onSubmit }) => {
   const [genrePicked, setGenrePicked] = useState(null);
 
   const onSelect = (group) => {
@@ -16,13 +16,16 @@ const GenrePicker = () => {
       <div className="genre-picker__main">
         {genreGroups.map((group) => (
           <GenreOption
+            key={group.name}
             genre={group}
             onSelect={onSelect}
             isSelected={genrePicked === group}
           />
         ))}
       </div>
-      <div>{JSON.stringify(genrePicked)}</div>
+      <button onClick={() => onSubmit(genrePicked)} disabled={!genrePicked}>
+        Odeslat
+      </button>
     </div>
   );
 };
