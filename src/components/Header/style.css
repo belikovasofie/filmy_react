@@ -1,43 +1,275 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 2;
+  font-family: 'Cantora One', sans-serif;
+  font-size: 20px;
+}
+
 header {
   background-color: #e1def8ff;
   padding: 10px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
+
+footer {
+  background-color: #e1def8ff;
+  padding: 10px;
+  text-align: center;
+  padding: 10px auto;
+  color: #1f156b;
+}
+
 .topbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.topbar__navigation {
+  display: none;
 }
 
 .topbar__logo {
-  display: flex;
+  flex: 1;
+}
+
+.topbar__logo a {
   display: flex;
   justify-content: left;
   align-items: center;
+  text-decoration: none;
 }
 
-.site__pict {
-  width: 80px;
+.topbar__logo a:hover {
+  text-decoration: underline;
+}
+
+.topbar__pict {
   height: 50px;
-  /* background-image: url('/dist/img/camIcon.png'); */
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-right: 20px;
 }
 
-.site__name {
+.topbar__name {
   text-align: left;
   color: #1f156b;
   font-weight: bold;
   font-size: 25px;
+  /* font-family: 'Lato', sans-serif; ----------------*/
 }
 
 .navigation a {
+  /* font-family: 'Lato', sans-serif; -----------------*/
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 15px;
   color: #1f156b;
+  font-size: 25px;
+}
+
+.navigation_search {
+  height: 30px;
+  vertical-align: text-bottom;
 }
 
 .navigation a:hover {
   text-decoration: underline;
+}
+
+/* Hamburger menu */
+
+.topbar__mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-color: #f4f3ff;
+  padding: 20px;
+  font-size: 30px;
+}
+.topbar__mobile-nav.is-open {
+  display: block;
+}
+
+.topbar__mobile-nav a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ----------- PRO MAIN ----------*/
+
+.main__home {
+  display: flex;
+}
+
+.content__left {
+  display: none;
+  /* background-image: url('./img/4242799-01.jpg'); */
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-position: center;
+  background-size: cover;
+  flex-basis: 65%;
+}
+
+.content__right {
+  background-color: #1f156b;
+  color: azure;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__text {
+  /* font-family: 'Lato', sans-serif;  ---------------------*/
+  padding: 60px;
+  color: #e1def8ff;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .topbar__navigation {
+    display: block;
+  }
+  .topbar__hamburger {
+    display: none;
+  }
+  .content__left {
+    display: block;
+  }
+  .content__right {
+    flex-basis: 35%;
+  }
+  .topbar__mobile-nav {
+    display: none !important;
+  }
+}
+
+/* ------------KVÍZ--------------------*/
+
+.main__quiz {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.quiz__majorGenre {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border: solid 1px black;
+}
+
+.majorGenre__genre {
+  flex-basis: 30%;
+  margin: 10px;
+  background-color: blue;
+}
+
+.quiz__secondaryGenre {
+  background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: 20px;
+  border: solid 1px black;
+}
+
+.secondaryGenre__genre {
+  flex-basis: 30%;
+  margin: 10px;
+  background-color: yellow;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+/* ------------ movie (výsledek vyhledávání) ----------------- */
+
+.main__movie {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.movie__box {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.movie__selected {
+  flex-basis: 50%;
+  /* border: 1px solid black; */
+  height: 700px;
+  text-align: center;
+}
+
+.movie__selected--view {
+}
+
+.movie__selected--text {
+  padding: 10px;
+}
+
+.movie__item {
+  /* border: 1px solid black; */
+  height: 300px;
+  flex-basis: 50%;
+  height: 350px;
+  text-align: center;
+}
+
+.movie__item--view {
+}
+
+.movie__item--text {
 }

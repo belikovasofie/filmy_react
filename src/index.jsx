@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <div>
+      <main>
         <Switch>
           <Route path="/quiz-results/:genre">
             <QuizResults />
@@ -25,7 +25,7 @@ const App = () => {
             <Homepage />
           </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 };
