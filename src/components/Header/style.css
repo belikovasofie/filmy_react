@@ -1,0 +1,43 @@
+header {
+  background-color: #e1def8ff;
+  padding: 10px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar__logo {
+  display: flex;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.site__pict {
+  width: 80px;
+  height: 50px;
+  background-image: url('/dist/img/camIcon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.site__name {
+  text-align: left;
+  color: #1f156b;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navigation a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  color: #1f156b;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
