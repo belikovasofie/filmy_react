@@ -5,17 +5,17 @@ import './style.css';
 const Header = () => (
   <header>
     <div className="topbar">
-      <div className="topbar__logo">
-        <div className="site__pict"></div>
-        <div className="site__name">DEJ SI FILM</div>
-      </div>
-      <div className="site__navigation">
+      <NavLink to="/">
+        <div className="topbar__logo">
+          <div className="topbar__pict"></div>
+          <div className="topbar__name">DEJ SI FILM</div>
+        </div>
+      </NavLink>
+      <div className="topbar__navigation">
         <nav className="navigation">
-          <a href="#">O Filmech</a>
-          <a href="#">Kvíz</a>
-          <a href="#">
-            <input type="search" id="search" placeholder="Search..." />
-          </a>
+          <NavLink to="/about-films">O filmech</NavLink>
+          <NavLink to="/quiz">Kvíz</NavLink>
+          <NavLink to="/search">Hledej</NavLink>
         </nav>
       </div>
     </div>

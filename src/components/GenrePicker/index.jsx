@@ -7,7 +7,7 @@ const GenrePicker = ({ onSubmit }) => {
   const [genrePicked, setGenrePicked] = useState(null);
 
   const onSelect = (group) => {
-    setGenrePicked(group);
+    setGenrePicked(group.name);
   };
 
   return (
@@ -19,7 +19,7 @@ const GenrePicker = ({ onSubmit }) => {
             key={group.name}
             genre={group}
             onSelect={onSelect}
-            isSelected={genrePicked === group}
+            isSelected={genrePicked === group.name}
           />
         ))}
       </div>

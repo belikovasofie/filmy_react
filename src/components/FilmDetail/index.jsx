@@ -11,7 +11,7 @@ const FilmDetail = ({ data }) => {
         src={
           data.poster_path
             ? `https://image.tmdb.org/t/p/w500${data.poster_path}`
-            : '/img/movie_placeholder.png'
+            : require('../../img/movie_placeholder.png').default
         }
       />
       <p>{data.overview}</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './style.css';
 
 const FilmGroup = ({ data }) => {
@@ -11,7 +12,7 @@ const FilmGroup = ({ data }) => {
             src={
               film.poster_path
                 ? `https://image.tmdb.org/t/p/w92${film.poster_path}`
-                : '/img/movie_placeholder.png'
+                : require('../../img/movie_placeholder.png').default
             }
           />
           <h3>

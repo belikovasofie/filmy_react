@@ -2,32 +2,32 @@ const genreGroups = [
   {
     name: 'actionAdventure',
     genreIds: [28, 12],
-    image: 'img/adventure.jpg',
+    image: require('../img/adventure.jpg').default,
   },
   {
     name: 'relax',
     genreIds: [35, 10751, 10749],
-    image: 'img/comedy.jpg',
+    image: require('../img/comedy.jpg').default,
   },
   {
     name: 'detective',
     genreIds: [80, 18, 9648],
-    image: 'img/crime.jpg',
+    image: require('../img/crime.jpg').default,
   },
   {
     name: 'military',
     genreIds: [36, 10752, 37],
-    image: 'img/western.jpg',
+    image: require('../img/western.jpg').default,
   },
   {
     name: 'scifiFantasy',
     genreIds: [14, 878],
-    image: 'img/scifi.jpg',
+    image: require('../img/scifi.jpg').default,
   },
   {
     name: 'thrilling',
     genreIds: [27, 53],
-    image: 'img/horror.jpg',
+    image: require('../img/horror.jpg').default,
   },
 ];
 

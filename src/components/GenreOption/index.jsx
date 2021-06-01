@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './style.css';
+
 const GenreOption = ({ genre, isSelected, onSelect }) => {
   return (
     <div className="option">
