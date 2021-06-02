@@ -4,6 +4,10 @@ import './style.css';
 const Footer = () => (
   <footer className="footer">
     <p>Nashledanou v KINĚ!</p>
+    <p>
+      ©2021, Eva Laštůvková & Sofya Belikova pro Czechitas, Digitální Akademie
+      Web
+    </p>
   </footer>
 );
 
