@@ -8,22 +8,32 @@ import './style.css';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const Link = ({ to, children }) => {
+    const handleClick = () => setOpen(false);
+
+    return (
+      <NavLink to={to} onClick={handleClick}>
+        {children}
+      </NavLink>
+    );
+  };
+
   return (
     <header>
       <div className="topbar">
         <div className="topbar__logo">
-          <NavLink to="/">
+          <Link to="/">
             <img src={CamIcon} className="topbar__pict" />
             <div className="topbar__name">DEJ SI FILM</div>
-          </NavLink>
+          </Link>
         </div>
         <div className="topbar__navigation">
           <nav className="navigation">
-            <NavLink to="/about-films">O filmech</NavLink>
-            <NavLink to="/quiz">Kvíz</NavLink>
-            <NavLink to="/search">
+            <Link to="/about-films">O filmech</Link>
+            <Link to="/quiz">Kvíz</Link>
+            <Link to="/search">
               <img className="navigation_search" src={HandGlass} />
-            </NavLink>
+            </Link>
           </nav>
         </div>
         <nav
@@ -31,9 +41,9 @@ const Header = () => {
             isOpen ? 'topbar__mobile-nav is-open' : 'topbar__mobile-nav'
           }
         >
-          <NavLink to="/about-films">O filmech</NavLink>
-          <NavLink to="/quiz">Kvíz</NavLink>
-          <NavLink to="/search">Hledej</NavLink>
+          <Link to="/about-films">O filmech</Link>
+          <Link to="/quiz">Kvíz</Link>
+          <Link to="/search">Hledej</Link>
         </nav>
         <div className="topbar__hamburger">
           <Hamburger toggled={isOpen} toggle={setOpen} color="#1f156b" />
