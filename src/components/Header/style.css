@@ -1,12 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
 body {
   line-height: 2;
   font-family: 'Cantora One', sans-serif;
