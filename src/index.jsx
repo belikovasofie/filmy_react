@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 import QuizResults from './pages/QuizResults';
 import Homepage from './pages/Homepage';
 import QuizPage from './pages/Quiz';
@@ -26,6 +27,7 @@ const App = () => {
           </Route>
         </Switch>
       </main>
+      <Footer />
     </Router>
   );
 };
