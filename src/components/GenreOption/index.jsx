@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getRandomArrayElement } from '../../lib/helpers';
 
 import './style.css';
 
 const GenreOption = ({ genre, isSelected, onSelect }) => {
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    setImage(getRandomArrayElement(genre.image));
+  }, [genre]);
+
   return (
     <div className="option">
       <label>
@@ -11,7 +18,7 @@ const GenreOption = ({ genre, isSelected, onSelect }) => {
           checked={isSelected}
           onChange={() => onSelect(genre)}
         />
-        <img src={genre.image} alt="" draggable={false} />
+        <img src={image} alt="" draggable={false} />
       </label>
     </div>
   );
