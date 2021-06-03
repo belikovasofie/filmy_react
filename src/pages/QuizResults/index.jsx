@@ -13,8 +13,6 @@ import './style.css';
 const RESULT_COUNT = 10;
 
 const QuizResults = () => {
-  return <Loader />;
-
   const [results, setResults] = useState(null);
   const { genre } = useParams();
 
