@@ -1,5 +1,6 @@
 const genreGroups = [
   {
+    id: 1,
     name: 'actionAdventure',
     genreIds: [28, 12],
     image: [
@@ -14,6 +15,7 @@ const genreGroups = [
     ],
   },
   {
+    id: 2,
     name: 'relax',
     genreIds: [35, 10751, 10749],
     image: [
@@ -35,6 +37,7 @@ const genreGroups = [
     ],
   },
   {
+    id: 3,
     name: 'detective',
     genreIds: [80, 18, 9648],
     image: [
@@ -52,6 +55,7 @@ const genreGroups = [
     ],
   },
   {
+    id: 4,
     name: 'military',
     genreIds: [36, 10752, 37],
     image: [
@@ -64,6 +68,7 @@ const genreGroups = [
     ],
   },
   {
+    id: 5,
     name: 'scifiFantasy',
     genreIds: [14, 878],
     image: [
@@ -80,6 +85,7 @@ const genreGroups = [
     ],
   },
   {
+    id: 6,
     name: 'thrilling',
     genreIds: [27, 53],
     image: [

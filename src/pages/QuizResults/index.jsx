@@ -15,9 +15,10 @@ const RESULT_COUNT = 10;
 const QuizResults = () => {
   const [results, setResults] = useState(null);
   const { genre } = useParams();
+  const genreNumber = Number(genre);
 
   const fetchFilms = () => {
-    const genreGroup = genreGroups.find((group) => group.name === genre);
+    const genreGroup = genreGroups.find((group) => group.id === genreNumber);
     const genreIds = genreGroup.genreIds.join('|');
 
     sendRequest('discover/movie', {
