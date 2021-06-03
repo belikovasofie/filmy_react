@@ -6,13 +6,11 @@ import Loader from '../../components/Loader';
 const SearchResult = () => {
   const { term } = useParams();
 
-  const fetchResult =  sendRequest('discover/movie', {
-    
-    
-  }).then((data) => {
-    
+  const fetchResult = () => {
+    sendRequest('discover/movie', {}).then((data) => {});
+  };
 
-useEffect(fetchResult, []);
+  useEffect(fetchResult, []);
 
   return (
     <>

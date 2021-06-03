@@ -14,14 +14,6 @@ header {
   width: 100%;
 }
 
-footer {
-  background-color: #e1def8ff;
-  padding: 10px;
-  text-align: center;
-  padding: 10px auto;
-  color: #1f156b;
-}
-
 .topbar {
   display: flex;
   align-items: center;
@@ -56,15 +48,11 @@ footer {
   color: #1f156b;
   font-weight: bold;
   font-size: 25px;
-}
-
-.navigation {
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  /* font-family: 'Lato', sans-serif; ----------------*/
 }
 
 .navigation a {
+  /* font-family: 'Lato', sans-serif; -----------------*/
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -76,16 +64,10 @@ footer {
 .navigation_search {
   height: 30px;
   vertical-align: text-bottom;
-  transition: width 2s, height 2s, transform 1s;
 }
 
 .navigation a:hover {
   text-decoration: underline;
-}
-
-.navigation_search:hover {
-  /* height: 40px; */
-  transform: rotate(90deg);
 }
 
 /* Hamburger menu */
@@ -138,6 +120,7 @@ footer {
 }
 
 .content__text {
+  /* font-family: 'Lato', sans-serif;  ---------------------*/
   padding: 60px;
   color: #e1def8ff;
   text-align: center;
