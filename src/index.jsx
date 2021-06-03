@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import QuizResults from './pages/QuizResults';
 import Homepage from './pages/Homepage';
 import QuizPage from './pages/Quiz';
+import SearchPage from './pages/SearchPage';
 
 import './style.css';
 
@@ -21,6 +22,9 @@ const App = () => {
           </Route>
           <Route path="/quiz">
             <QuizPage />
+          </Route>
+          <Route path="/search">
+            <SearchPage />
           </Route>
           <Route path="/">
             <Homepage />
