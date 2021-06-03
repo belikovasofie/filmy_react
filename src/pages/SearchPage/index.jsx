@@ -11,7 +11,7 @@ const SearchPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    push(`/film-results/${inputValue}`);
+    push(`/search-result/${inputValue}`);
   };
 
   return (
