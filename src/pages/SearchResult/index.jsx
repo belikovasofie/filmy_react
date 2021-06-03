@@ -1,7 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router';
 
 const SearchResult = () => {
-  return <div>Result</div>;
+  const { term } = useParams();
+
+  return (
+    <>
+      <div>Result for {term}</div>
+    </>
+  );
 };
 
 export default SearchResult;

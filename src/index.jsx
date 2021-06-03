@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/search">
             <SearchPage />
           </Route>
-          <Route path="/search-result">
+          <Route path="/search-result/:term">
             <SearchResult />
           </Route>
           <Route path="/">
