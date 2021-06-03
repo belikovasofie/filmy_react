@@ -61,7 +61,6 @@ const genreGroups = [
       require('../img/military/military4.jpeg').default,
       require('../img/military/military5.jpeg').default,
       require('../img/military/military6.jpg').default,
-      ,
     ],
   },
   {

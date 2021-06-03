@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 
 import FilmDetail from '../../components/FilmDetail';
 import FilmGroup from '../../components/FilmGroup';
+import Loader from '../../components/Loader';
 import genreGroups from '../../data/genres';
 import { sendRequest } from '../../lib/apiService';
 
@@ -12,6 +13,8 @@ import './style.css';
 const RESULT_COUNT = 10;
 
 const QuizResults = () => {
+  return <Loader />;
+
   const [results, setResults] = useState(null);
   const { genre } = useParams();
 
@@ -38,7 +41,7 @@ const QuizResults = () => {
   useEffect(fetchFilms, []);
 
   if (results === null) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   return (
