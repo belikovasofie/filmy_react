@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { sendRequest } from '../../lib/apiService';
 
 const FilmDetail = ({ data }) => {
+  const [info, setInfo] = useState(null);
+
+  useEffect(() => {
+    sendRequest(`movie/${data.id}`).then((data) => setInfo(data));
+  }, []);
+
+  console.log(info);
+
   return (
     <div>
       <h2>
@@ -15,6 +24,11 @@ const FilmDetail = ({ data }) => {
         }
       />
       <p>{data.overview}</p>
+      {info && (
+        <p>
+          <a href={`http://imdb.com/title/${info.imdb_id}`}>IMDb</a>
+        </p>
+      )}
     </div>
   );
 };
