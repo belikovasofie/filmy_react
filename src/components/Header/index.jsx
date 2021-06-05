@@ -31,10 +31,6 @@ const Header = () => {
           <nav className="navigation">
             <Link to="/quiz">Kvíz</Link>
             <Link to="/trending">TOP10</Link>
-
-            <Link to="/search">
-              <img className="navigation_search" src={HandGlass} />
-            </Link>
           </nav>
         </div>
         <nav
@@ -44,7 +40,7 @@ const Header = () => {
         >
           <Link to="/about-films">O filmech</Link>
           <Link to="/quiz">Kvíz</Link>
-          <Link to="/search">Hledej</Link>
+          <Link to="/trending">TOP10</Link>
         </nav>
         <div className="topbar__hamburger">
           <Hamburger toggled={isOpen} toggle={setOpen} color="#1f156b" />

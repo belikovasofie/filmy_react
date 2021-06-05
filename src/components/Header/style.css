@@ -61,11 +61,6 @@ header {
   font-size: 25px;
 }
 
-.navigation_search {
-  height: 30px;
-  vertical-align: text-bottom;
-}
-
 .navigation a:hover {
   text-decoration: underline;
 }
