@@ -39,14 +39,6 @@ const Test = ({ onSubmit }) => {
           genrePicked={genrePicked}
         />
       </div>
-      {showButton && (
-        <button
-          onClick={() => onSubmit(genrePicked, sliderValue)}
-          disabled={[1, 2, 3, 4, 5, 6].includes(genrePicked)}
-        >
-          Odeslat
-        </button>
-      )}
       {showSlider && (
         <Slider
           onSliderValChange={onSliderValChange}
@@ -56,6 +48,14 @@ const Test = ({ onSubmit }) => {
           maxText="nejlepší"
           value={5}
         />
+      )}
+      {showButton && (
+        <button
+          onClick={() => onSubmit(genrePicked, sliderValue)}
+          disabled={[1, 2, 3, 4, 5, 6].includes(genrePicked)}
+        >
+          Odeslat
+        </button>
       )}
     </div>
   );
