@@ -65,15 +65,24 @@ const QuizResults = () => {
     setSelectedFilm(film);
   };
   return (
-    <div className="results">
-      <div className="results__detail">
-        {selectedFilm && <FilmDetail data={selectedFilm} />}
+    <>
+      <div className="results">
+        <div className="results__detail">
+          {selectedFilm && <FilmDetail data={selectedFilm} />}
+        </div>
+        <div className="results__group">
+          <FilmGroup handleClick={handleClick} data={results.slice(1)} />
+          <button onClick={() => fetchFilms()}>Nevybral sis?</button>
+        </div>
       </div>
-      <div className="results__group">
-        <FilmGroup handleClick={handleClick} data={results.slice(1)} />
-      </div>
-    </div>
+    </>
   );
 };
 
 export default QuizResults;
+
+/* <button onClick={window.location.reload()}>Další</button> 
+
+<button onClick={window.location.reload()}>Další</button>
+
+*/
