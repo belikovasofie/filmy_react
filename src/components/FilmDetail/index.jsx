@@ -26,7 +26,7 @@ const FilmDetail = ({ data }) => {
       <p>{data.overview}</p>
       {info && (
         <p>
-          <a href={`http://imdb.com/title/${info.imdb_id}`}>IMDb</a>
+          <a href={`http://imdb.com/title/${info.imdb_id}`}> Odkaz na IMDb</a>
         </p>
       )}
     </div>
