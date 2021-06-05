@@ -1,5 +1,6 @@
 .main_pic {
-  width: 600px;
+  /*  width: 600px; */
+  width: 100%;
 }
 .main__home {
   padding: 0px;
