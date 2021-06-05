@@ -16,23 +16,25 @@ const QuizResults = () => {
   const [results, setResults] = useState(null);
   const { genre } = useParams();
   const genreNumber = Number(genre);
+  const [selectedFilm, setSelectedFilm] = useState();
 
   const fetchFilms = () => {
-    const genreGroup = genreGroups.find((group) => group.id === genreNumber);
-    const genreIds = genreGroup.genreIds.join('|');
+    // const genreGroup = genreGroups.find((group) => group.id === genreNumber);
+    // const genreIds = genreGroup.genreIds.map((g) => g.id).join('|');
 
     sendRequest('discover/movie', {
-      with_genres: genreIds,
+      with_genres: genreNumber,
     }).then((data) => {
       const pageCount = data.total_pages;
       const page = Math.floor(Math.random() * pageCount + 1);
 
       sendRequest('discover/movie', {
-        with_genres: genreIds,
+        with_genres: genreNumber,
         page,
       }).then((data) => {
         const films = arrayShuffle(data.results).slice(0, RESULT_COUNT);
         setResults(films);
+        setSelectedFilm(films[0]);
       });
     });
   };
@@ -42,14 +44,16 @@ const QuizResults = () => {
   if (results === null) {
     return <Loader />;
   }
-
+  const handleClick = (film) => {
+    setSelectedFilm(film);
+  };
   return (
     <div className="results">
       <div className="results__detail">
-        <FilmDetail data={results[0]} />
+        {selectedFilm && <FilmDetail data={selectedFilm} />}
       </div>
       <div className="results__group">
-        <FilmGroup data={results.slice(1)} />
+        <FilmGroup handleClick={handleClick} data={results.slice(1)} />
       </div>
     </div>
   );

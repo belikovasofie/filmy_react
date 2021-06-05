@@ -4,9 +4,9 @@ Vytvořeno s `create-czechitas-app` 💜
 
 ## Žánry
 
-- actionAdventure: Action, Adventure
-- relax: Comedy, Romance, Family
-- detective: Crime, Drama, Mystery
-- military: War, Western, History
-- scifiFantasy: Science Fiction, Fantasy
-- thrilling: Horror, Thriller
+- actionAdventure: Action, Adventure id:1
+- relax: Comedy, Romance, Family id:2
+- detective: Crime, Drama, Mystery id:3
+- military: War, Western, History id:4
+- scifiFantasy: Science Fiction, Fantasy id:5
+- thrilling: Horror, Thriller id:6

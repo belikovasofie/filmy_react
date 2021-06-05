@@ -11,3 +11,4 @@ export const sendRequest = (endpoint, options) => {
     data.json(),
   );
 };
+0;

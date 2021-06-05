@@ -1,32 +1,18 @@
-import React, { useState } from 'react';
-import genreGroups from '../../data/genres';
+import React, { Fragment, useState } from 'react';
 import GenreOption from '../GenreOption';
-import './style.css';
 
-const GenrePicker = ({ onSubmit }) => {
-  const [genrePicked, setGenrePicked] = useState(null);
-
-  const onSelect = (group) => {
-    setGenrePicked(group.id);
-  };
-
+const GenrePicker = ({ genreGroups, onSelect, genrePicked }) => {
   return (
-    <div className="genre-picker">
-      <h2>Vyber obrázek:</h2>
-      <div className="genre-picker__main">
-        {genreGroups.map((group) => (
-          <GenreOption
-            key={group.id}
-            genre={group}
-            onSelect={onSelect}
-            isSelected={genrePicked === group.id}
-          />
-        ))}
-      </div>
-      <button onClick={() => onSubmit(genrePicked)} disabled={!genrePicked}>
-        Odeslat
-      </button>
-    </div>
+    <Fragment>
+      {genreGroups.map((group) => (
+        <GenreOption
+          key={group.id}
+          genre={group}
+          onSelect={onSelect}
+          isSelected={genrePicked === group.id}
+        />
+      ))}
+    </Fragment>
   );
 };
 

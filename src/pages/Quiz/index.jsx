@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-
-import GenrePicker from '../../components/GenrePicker';
+import Test from '../../components/Test';
 
 const QuizPage = () => {
   const { push } = useHistory();
@@ -13,7 +12,7 @@ const QuizPage = () => {
   return (
     <div>
       <h1>Quiz!</h1>
-      <GenrePicker onSubmit={handleSubmit} />
+      <Test onSubmit={handleSubmit} />
     </div>
   );
 };

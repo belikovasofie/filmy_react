@@ -2,11 +2,15 @@ import React from 'react';
 
 import './style.css';
 
-const FilmGroup = ({ data }) => {
+const FilmGroup = ({ data, handleClick }) => {
   return (
     <div>
       {data.map((film) => (
-        <div className="film-group" key={film.id}>
+        <div
+          onClick={() => handleClick(film)}
+          className="film-group"
+          key={film.id}
+        >
           <img
             className="film-group__image"
             src={
