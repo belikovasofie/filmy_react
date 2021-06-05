@@ -29,8 +29,9 @@ const Header = () => {
         </div>
         <div className="topbar__navigation">
           <nav className="navigation">
-            <Link to="/about-films">O filmech</Link>
             <Link to="/quiz">Kvíz</Link>
+            <Link to="/trending">TOP10</Link>
+
             <Link to="/search">
               <img className="navigation_search" src={HandGlass} />
             </Link>

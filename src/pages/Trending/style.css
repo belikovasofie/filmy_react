@@ -1,0 +1,11 @@
+.results {
+  display: flex;
+}
+
+.results__detail {
+  flex: 2;
+}
+
+.results__group {
+  flex: 1;
+}
