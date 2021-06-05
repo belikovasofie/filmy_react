@@ -38,7 +38,6 @@ const Header = () => {
             isOpen ? 'topbar__mobile-nav is-open' : 'topbar__mobile-nav'
           }
         >
-          <Link to="/about-films">O filmech</Link>
           <Link to="/quiz">Kvíz</Link>
           <Link to="/trending">TOP10</Link>
         </nav>
