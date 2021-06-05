@@ -12,7 +12,6 @@ const Test = ({ onSubmit }) => {
   const [sliderValue, setSliderValue] = useState(null);
 
   const onSliderValChange = (value) => {
-    console.log(value);
     setSliderValue(value);
   };
 
