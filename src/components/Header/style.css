@@ -121,7 +121,7 @@ header {
 
 .content__text {
   /* font-family: 'Lato', sans-serif;  ---------------------*/
-  padding: 60px;
+  padding: 40px 40px 0 40px;
   color: #e1def8ff;
   text-align: center;
 }
