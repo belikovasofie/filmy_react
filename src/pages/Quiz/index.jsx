@@ -5,8 +5,12 @@ import Test from '../../components/Test';
 const QuizPage = () => {
   const { push } = useHistory();
 
-  const handleSubmit = (genrePicked) => {
-    push(`/quiz-results/${genrePicked}`);
+  const handleSubmit = (genrePicked, rating) => {
+    if (rating) {
+      push(`/quiz-results/${genrePicked}?rating=${rating}`);
+    } else {
+      push(`/quiz-results/${genrePicked}`);
+    }
   };
 
   return (

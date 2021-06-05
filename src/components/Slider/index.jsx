@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const Slider = ({ min, minText, max, maxText, value }) => {
+const Slider = ({ min, minText, max, maxText, value, onSliderValChange }) => {
   const [val, setVal] = useState(value);
   const [x, setX] = useState((value - min) / (max - min));
 
@@ -10,6 +10,7 @@ const Slider = ({ min, minText, max, maxText, value }) => {
     setVal(inputValue);
 
     setX((inputValue - min) / (max - min));
+    onSliderValChange(inputValue);
   };
 
   return (
