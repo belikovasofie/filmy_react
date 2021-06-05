@@ -42,6 +42,8 @@ const QuizResults = () => {
       }).then((data) => {
         const allFilms = arrayShuffle(data.results);
 
+        console.log(allFilms.length);
+
         if (rating) {
           let films = allFilms.filter((film) => film.vote_average >= rating);
           films = films.slice(0, RESULT_COUNT);
