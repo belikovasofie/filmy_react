@@ -1,6 +1,6 @@
 import arrayShuffle from 'array-shuffle';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useLocation, useParams } from 'react-router';
 
 import FilmDetail from '../../components/FilmDetail';
 import FilmGroup from '../../components/FilmGroup';
@@ -10,13 +10,21 @@ import { sendRequest } from '../../lib/apiService';
 
 import './style.css';
 
+const parseRating = (searchString) => {
+  if (!searchString) return null;
+  return searchString.replace('?rating=', '');
+};
+
 const RESULT_COUNT = 10;
 
 const QuizResults = () => {
   const [results, setResults] = useState(null);
   const { genre } = useParams();
+  const { search } = useLocation();
   const genreNumber = Number(genre);
   const [selectedFilm, setSelectedFilm] = useState();
+
+  const rating = parseRating(search);
 
   const fetchFilms = () => {
     // const genreGroup = genreGroups.find((group) => group.id === genreNumber);
@@ -32,9 +40,18 @@ const QuizResults = () => {
         with_genres: genreNumber,
         page,
       }).then((data) => {
-        const films = arrayShuffle(data.results).slice(0, RESULT_COUNT);
-        setResults(films);
-        setSelectedFilm(films[0]);
+        const allFilms = arrayShuffle(data.results);
+
+        if (rating) {
+          let films = allFilms.filter((film) => film.vote_average >= rating);
+          films = films.slice(0, RESULT_COUNT);
+          setResults(films);
+          setSelectedFilm(films[0]);
+        } else {
+          const films = allFilms.slice(0, RESULT_COUNT);
+          setResults(films);
+          setSelectedFilm(films[0]);
+        }
       });
     });
   };

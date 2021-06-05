@@ -8,13 +8,12 @@ const FilmDetail = ({ data }) => {
     sendRequest(`movie/${data.id}`).then((data) => setInfo(data));
   }, []);
 
-  console.log(info);
-
   return (
     <div>
       <h2>
         {data.title}
         {data.release_date && ` (${data.release_date.slice(0, 4)})`}
+        {data.vote_average}
       </h2>
       <img
         src={
