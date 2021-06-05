@@ -1,11 +1,13 @@
 import React from 'react';
 import homepagepic from '../../img/homepagepic.jpeg';
+import Quotes from '../../components/Quotes';
+
 import './style.css';
 const Homepage = () => {
   return (
     <main className="main__home">
       <div className="content__left">
-        <img src={homepagepic} className="main_pic " />
+        <Quotes />
       </div>
       <div className="content__right">
         <p className="content__text">

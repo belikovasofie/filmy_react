@@ -1,0 +1,20 @@
+.quote__movie {
+  font-style: italic;
+  text-align: right;
+}
+
+.quote__element {
+  width: 300px;
+  float: right;
+  margin-right: 20px;
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
+
+/*
+@media screen and (max-width: 640px) {
+  .quote__element {
+    display: none;
+  }
+*/
