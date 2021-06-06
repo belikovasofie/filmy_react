@@ -4,6 +4,10 @@ const getGenresTexts = (genres) => {
   return genres.map((genre) => genre.name).toString();
 };
 
+const getCountry = (production_companies) => {
+  return production_companies.map((countr) => countr.origin_country).toString();
+};
+
 const FilmDetail = ({ data }) => {
   const [info, setInfo] = useState(null);
 
@@ -19,8 +23,10 @@ const FilmDetail = ({ data }) => {
         {info.release_date && ` (${info.release_date.slice(0, 4)})`}
         {info.vote_average}
         {info.genres && getGenresTexts(info.genres)}
-        {info.tagline}
-        {info.origin_country}
+        {info.tagline + ' - '}
+
+        {info.production_companies &&
+          getCountry(info.production_companies) + ', '}
       </h2>
       <img
         src={
