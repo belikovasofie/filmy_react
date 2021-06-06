@@ -4,6 +4,11 @@ const getGenresTexts = (genres) => {
   return genres.map((genre) => genre.name).toString();
 };
 
+const getOriginCountry = (production_companies) => {
+  return production_companies.map((company) =>
+    company.origin_country.toString(),
+  );
+};
 const FilmDetail = ({ data }) => {
   const [info, setInfo] = useState(null);
 
@@ -20,8 +25,10 @@ const FilmDetail = ({ data }) => {
         {info.vote_average}
         {info.genres && getGenresTexts(info.genres)}
         {info.tagline}
-        {info.origin_country}
+        {info.production_companies &&
+          getOriginCountry(info.production_companies)}
       </h2>
+
       <img
         src={
           info.poster_path

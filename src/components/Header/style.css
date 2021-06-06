@@ -35,7 +35,7 @@ header {
 }
 
 .topbar__logo a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .topbar__pict {
