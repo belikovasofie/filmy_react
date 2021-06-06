@@ -3,7 +3,7 @@
 vSvSvModra #e1def8ff
 SvModra #8d86b8
 TmModra #1f156b
-Cream #fffbf9
+body: #f6f5fd- sv. fialová 
 zloutkova #e1bc41
 zelena #235155  */
 
@@ -19,6 +19,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f6f5fd;
 }
 
 main {
