@@ -5,7 +5,6 @@ import { useLocation, useParams } from 'react-router';
 import FilmDetail from '../../components/FilmDetail';
 import FilmGroup from '../../components/FilmGroup';
 import Loader from '../../components/Loader';
-import genreGroups from '../../data/genres';
 import { sendRequest } from '../../lib/apiService';
 
 import './style.css';
@@ -27,9 +26,6 @@ const QuizResults = () => {
   const rating = parseRating(search);
 
   const fetchFilms = () => {
-    // const genreGroup = genreGroups.find((group) => group.id === genreNumber);
-    // const genreIds = genreGroup.genreIds.map((g) => g.id).join('|');
-
     sendRequest('discover/movie', {
       with_genres: genreNumber,
     }).then((data) => {
@@ -41,8 +37,6 @@ const QuizResults = () => {
         page,
       }).then((data) => {
         const allFilms = arrayShuffle(data.results);
-
-        console.log(allFilms.length);
 
         if (rating) {
           let films = allFilms.filter((film) => film.vote_average >= rating);

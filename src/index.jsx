@@ -7,8 +7,7 @@ import Footer from './components/Footer';
 import QuizResults from './pages/QuizResults';
 import Homepage from './pages/Homepage';
 import QuizPage from './pages/Quiz';
-import SearchPage from './pages/SearchPage';
-import SearchResult from './pages/SearchResult';
+
 import Trending from './pages/Trending';
 
 import './style.css';
@@ -25,12 +24,7 @@ const App = () => {
           <Route path="/quiz">
             <QuizPage />
           </Route>
-          <Route path="/search">
-            <SearchPage />
-          </Route>
-          <Route path="/search-result/:term">
-            <SearchResult />
-          </Route>
+
           <Route path="/trending">
             <Trending />
           </Route>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
-import HandGlass from '../../img/handGlass.png';
 import CamIcon from '../../img/CamIcon.png';
 import './style.css';
 
@@ -30,7 +29,7 @@ const Header = () => {
         <div className="topbar__navigation">
           <nav className="navigation">
             <Link to="/quiz">Kvíz</Link>
-            <Link to="/trending">TOP10</Link>
+            <Link to="/trending">TRENDY</Link>
           </nav>
         </div>
         <nav
@@ -39,7 +38,7 @@ const Header = () => {
           }
         >
           <Link to="/quiz">Kvíz</Link>
-          <Link to="/trending">TOP10</Link>
+          <Link to="/trending">TRENDY</Link>
         </nav>
         <div className="topbar__hamburger">
           <Hamburger toggled={isOpen} toggle={setOpen} color="#1f156b" />

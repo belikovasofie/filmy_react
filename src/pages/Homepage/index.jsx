@@ -1,5 +1,4 @@
 import React from 'react';
-import homepagepic from '../../img/homepagepic.jpeg';
 import Quotes from '../../components/Quotes';
 
 import './style.css';
