@@ -4,11 +4,18 @@ const getGenresTexts = (genres) => {
   return genres.map((genre) => genre.name).toString();
 };
 
+<<<<<<< HEAD
 const getOriginCountry = (production_companies) => {
   return production_companies.map((company) =>
     company.origin_country.toString(),
   );
 };
+=======
+const getCountry = (production_companies) => {
+  return production_companies.map((countr) => countr.origin_country).toString();
+};
+
+>>>>>>> 8ca0b49bbfa59a73a9d6945e4213dcd71e080ab0
 const FilmDetail = ({ data }) => {
   const [info, setInfo] = useState(null);
 
@@ -24,9 +31,16 @@ const FilmDetail = ({ data }) => {
         {info.release_date && ` (${info.release_date.slice(0, 4)})`}
         {info.vote_average}
         {info.genres && getGenresTexts(info.genres)}
+<<<<<<< HEAD
         {info.tagline}
         {info.production_companies &&
           getOriginCountry(info.production_companies)}
+=======
+        {info.tagline + ' - '}
+
+        {info.production_companies &&
+          getCountry(info.production_companies) + ', '}
+>>>>>>> 8ca0b49bbfa59a73a9d6945e4213dcd71e080ab0
       </h2>
 
       <img
