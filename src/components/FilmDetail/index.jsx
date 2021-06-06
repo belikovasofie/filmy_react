@@ -35,6 +35,16 @@ const FilmDetail = ({ data }) => {
             : require('../../img/movie_placeholder.png').default
         }
       />
+      <div>
+        {info.title}
+        {info.release_date && ` (${info.release_date.slice(0, 4)})`}
+        {info.vote_average}
+        {info.genres && getGenresTexts(info.genres)}
+        {info.tagline + ' - '}
+
+        {info.production_companies &&
+          getCountry(info.production_companies) + ', '}
+      </div>
       <p>{info.overview}</p>
       {info && (
         <p>
