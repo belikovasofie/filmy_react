@@ -14,26 +14,29 @@ const Slider = ({ min, minText, max, maxText, value, onSliderValChange }) => {
   };
 
   return (
-    <div className="slider">
-      <div className="slider__min">{minText}</div>
-      <div className="slider__control">
-        <div
-          className="slider__bubble"
-          style={{ left: `calc((100% - 25px) * ${x} + 14px )` }}
-        >
-          {val}
+    <>
+      <h4>Uživatelské hodnocení</h4>
+      <div className="slider">
+        <div className="slider__min">{minText}</div>
+        <div className="slider__control">
+          <div
+            className="slider__bubble"
+            style={{ left: `calc((100% - 25px) * ${x} + 14px )` }}
+          >
+            {val}
+          </div>
+          <input
+            className="slider__input"
+            type="range"
+            min={min}
+            max={max}
+            value={val}
+            onChange={handleChange}
+          />
         </div>
-        <input
-          className="slider__input"
-          type="range"
-          min={min}
-          max={max}
-          value={val}
-          onChange={handleChange}
-        />
+        <div className="slider__max">{maxText}</div>
       </div>
-      <div className="slider__max">{maxText}</div>
-    </div>
+    </>
   );
 };
 

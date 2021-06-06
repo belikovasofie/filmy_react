@@ -30,7 +30,7 @@ const Test = ({ onSubmit }) => {
   };
   return (
     <div className="genre-picker">
-      <h2>Vyber obrázek:</h2>
+      <h4>Vyber obrázek:</h4>
       <div className="genre-picker__main">
         <GenrePicker
           onSelect={onSelect}
@@ -38,6 +38,7 @@ const Test = ({ onSubmit }) => {
           genrePicked={genrePicked}
         />
       </div>
+
       {showSlider && (
         <Slider
           onSliderValChange={onSliderValChange}
