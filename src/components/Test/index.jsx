@@ -51,6 +51,7 @@ const Test = ({ onSubmit }) => {
       )}
       {showButton && (
         <button
+          className="btn"
           onClick={() => onSubmit(genrePicked, sliderValue)}
           disabled={[1, 2, 3, 4, 5, 6].includes(genrePicked)}
         >

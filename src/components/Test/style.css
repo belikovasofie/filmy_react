@@ -6,3 +6,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.btn {
+  background-color: #e1def8ff;
+  padding: 7px;
+  border-radius: 7px;
+}
