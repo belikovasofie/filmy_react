@@ -27,6 +27,12 @@
 
 @media screen and (max-width: 640px) {
   .option {
-    width: 50%;
+    flex-basis: 100%;
+    margin-bottom: 120px;
+  }
+  .option img {
+    object-fit: cover;
+    height: 400%;
+    margin-bottom: 20px;
   }
 }
