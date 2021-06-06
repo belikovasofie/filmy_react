@@ -3,6 +3,7 @@ import { sendRequest } from '../../lib/apiService';
 const getGenresTexts = (genres) => {
   return genres.map((genre) => genre.name).toString();
 };
+import './style.css';
 
 const getCountry = (production_companies) => {
   return production_companies.map((countr) => countr.origin_country).toString();
@@ -17,32 +18,29 @@ const FilmDetail = ({ data }) => {
   if (!info) return null;
 
   return (
-    <div>
-      <h2>
-        {info.title}
-        {info.release_date && ` (${info.release_date.slice(0, 4)})`}
-        {info.vote_average}
-        {info.genres && getGenresTexts(info.genres)}
-        {info.tagline + ' - '}
-        {info.production_companies &&
-          getCountry(info.production_companies) + ', '}
-      </h2>
-      <img
-        src={
-          info.poster_path
-            ? `https://image.tmdb.org/t/p/w500${info.poster_path}`
-            : require('../../img/movie_placeholder.png').default
-        }
-      />
+    <div className="">
       <div>
-        {info.title}
-        {info.release_date && ` (${info.release_date.slice(0, 4)})`}
-        {info.vote_average}
-        {info.genres && getGenresTexts(info.genres)}
-        {info.tagline + ' - '}
-        {info.production_companies &&
-          getCountry(info.production_companies) + ', '}
+        <h1>{info.title}</h1>
       </div>
+      <div className="filmDetail__item">
+        <img
+          src={
+            info.poster_path
+              ? `https://image.tmdb.org/t/p/w500${info.poster_path}`
+              : require('../../img/movie_placeholder.png').default
+          }
+        />
+        <div>
+          {info.title}
+          {info.release_date && ` (${info.release_date.slice(0, 4)})`}
+          {info.vote_average}
+          {info.genres && getGenresTexts(info.genres)}
+          {info.tagline + ' - '}
+          {info.production_companies &&
+            getCountry(info.production_companies) + ', '}
+        </div>
+      </div>
+
       <p>{info.overview}</p>
       {info && (
         <p>
