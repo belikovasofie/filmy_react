@@ -40,10 +40,6 @@ const FilmDetail = ({ data }) => {
         {info.vote_average}
         {info.genres && getGenresTexts(info.genres)}
         {info.tagline + ' - '}
-<<<<<<< HEAD
-
-=======
->>>>>>> 78a17d86de922098299fcb9e387445275992a5f0
         {info.production_companies &&
           getCountry(info.production_companies) + ', '}
       </div>
