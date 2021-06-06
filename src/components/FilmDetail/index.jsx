@@ -30,14 +30,20 @@ const FilmDetail = ({ data }) => {
               : require('../../img/movie_placeholder.png').default
           }
         />
-        <div>
-          {info.title}
-          {info.release_date && ` (${info.release_date.slice(0, 4)})`}
-          {info.vote_average}
-          {info.genres && getGenresTexts(info.genres)}
-          {info.tagline + ' - '}
-          {info.production_companies &&
-            getCountry(info.production_companies) + ', '}
+        <div className="FilmDetail__summary">
+          <div>
+            {info.title}{' '}
+            {info.release_date && ` (${info.release_date.slice(0, 4)})`}
+          </div>
+
+          <div>Hodnocení: {info.vote_average}</div>
+          <div>Žánr: {info.genres && getGenresTexts(info.genres)}</div>
+          <div>Tagline: {info.tagline}</div>
+          <div>
+            Země:{' '}
+            {info.production_companies &&
+              getCountry(info.production_companies) + ', '}
+          </div>
         </div>
       </div>
 

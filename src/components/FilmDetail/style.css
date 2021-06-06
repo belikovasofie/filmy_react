@@ -1,3 +1,7 @@
 .filmDetail__item {
   display: flex;
 }
+
+.FilmDetail__summary {
+  padding: 20px;
+}
