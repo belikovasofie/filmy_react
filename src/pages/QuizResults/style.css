@@ -8,4 +8,11 @@
 
 .results__group {
   flex: 1;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .results {
+    flex-direction: column;
+  }
 }

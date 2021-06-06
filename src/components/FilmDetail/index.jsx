@@ -20,7 +20,7 @@ const FilmDetail = ({ data }) => {
   return (
     <div className="">
       <div>
-        <h1>{info.title}</h1>
+        <h2 className="film__name">{info.title}</h2>
       </div>
       <div className="filmDetail__item">
         <img
@@ -36,11 +36,11 @@ const FilmDetail = ({ data }) => {
             {info.release_date && ` (${info.release_date.slice(0, 4)})`}
           </div>
 
-          <div>Hodnocení: {info.vote_average}</div>
-          <div>Žánr: {info.genres && getGenresTexts(info.genres)}</div>
+          <div>Rating: {info.vote_average}</div>
+          <div>Genre: {info.genres && getGenresTexts(info.genres)}</div>
           <div>Tagline: {info.tagline}</div>
           <div>
-            Země:{' '}
+            Country:{' '}
             {info.production_companies &&
               getCountry(info.production_companies) + ', '}
           </div>

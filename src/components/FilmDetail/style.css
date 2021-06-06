@@ -5,3 +5,13 @@
 .FilmDetail__summary {
   padding: 20px;
 }
+
+.film__name {
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 640px) {
+  .FilmDetail__summary {
+    display: none;
+  }
+}

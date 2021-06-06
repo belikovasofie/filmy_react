@@ -1,3 +1,7 @@
+.genre-picker {
+  padding-left: 20px;
+}
+
 .genre-picker__main {
   display: flex;
   flex-wrap: wrap;

@@ -4,8 +4,17 @@
 
 .results__detail {
   flex: 2;
+  padding: 30px;
 }
 
 .results__group {
   flex: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn__chooseNext {
+  background-color: #e1def8ff;
+  padding: 7px;
+  border-radius: 7px;
 }
