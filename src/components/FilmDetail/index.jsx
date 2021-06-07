@@ -54,7 +54,7 @@ const FilmDetail = ({ data }) => {
               : require('../../img/movie_placeholder.png').default
           }
         />
-        <div className="FilmDetail__summary">
+        <div className="filmDetail__summary">
           <div>
             {info.title}{' '}
             {info.release_date && ` (${info.release_date.slice(0, 4)})`}
@@ -71,12 +71,12 @@ const FilmDetail = ({ data }) => {
         </div>
       </div>
 
-      <p>{info.overview}</p>
-      {info && (
-        <p>
-          <a href={`http://imdb.com/title/${info.imdb_id}`}> Odkaz na IMDb</a>
-        </p>
-      )}
+      <p>
+        {info.overview}{' '}
+        {info && (
+          <a href={`http://imdb.com/title/${info.imdb_id}`}> Read more ...</a>
+        )}
+      </p>
     </div>
   );
 };

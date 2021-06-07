@@ -25,14 +25,20 @@
   height: 24px;
 }
 
+@media screen and (max-width: 860px) {
+  .option {
+    flex-basis: 50%;
+  }
+  .option img {
+  }
+}
+
 @media screen and (max-width: 640px) {
   .option {
     flex-basis: 100%;
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
   }
   .option img {
-    object-fit: cover;
-    height: 400%;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 }

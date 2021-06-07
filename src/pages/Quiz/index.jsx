@@ -15,7 +15,6 @@ const QuizPage = () => {
 
   return (
     <div>
-      <h1>Quiz!</h1>
       <Test onSubmit={handleSubmit} />
     </div>
   );

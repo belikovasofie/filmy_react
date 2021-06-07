@@ -11,6 +11,10 @@
   padding-left: 10px;
 }
 
+.btn-center {
+  margin: auto 120px;
+}
+
 @media screen and (max-width: 640px) {
   .results {
     flex-direction: column;

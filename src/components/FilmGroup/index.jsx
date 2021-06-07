@@ -21,7 +21,8 @@ const FilmGroup = ({ data, handleClick }) => {
           />
           <h3>
             {film.title}
-            {film.release_date && ` (${film.release_date.slice(0, 4)})`}
+            {film.release_date && ` (${film.release_date.slice(0, 4)})`}{' '}
+            <br></br>Rating: {film.vote_average}
           </h3>
         </div>
       ))}

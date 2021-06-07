@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.FilmDetail__summary {
+.filmDetail__summary {
   padding: 20px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .FilmDetail__summary {
+  .filmDetail__summary {
     display: none;
   }
 }
@@ -23,4 +23,8 @@
 
 .country__flag {
   height: 18px;
+}
+
+.filmDetail__item img {
+  width: 100%;
 }
