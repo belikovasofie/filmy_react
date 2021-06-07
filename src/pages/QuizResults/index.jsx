@@ -59,6 +59,7 @@ const QuizResults = () => {
   }
   const handleClick = (film) => {
     setSelectedFilm(film);
+    window.scrollTo({ top: 0, left: 0 });
   };
   return (
     <>

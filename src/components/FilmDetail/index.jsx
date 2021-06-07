@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { sendRequest } from '../../lib/apiService';
-const getGenresTexts = (genres) => {
-  return genres.map((genre) => genre.name).toString();
-};
 import './style.css';
 
-const getCountry = (production_companies) => {
-  return production_companies.map((countr) => countr.origin_country).toString();
+const getGenresTexts = (genres) => {
+  return genres.map((genre) => genre.name).join(', ');
+};
+
+const getCountries = (countries) => {
+  return countries.map(({ iso_3166_1, name }, index) => (
+    <>
+      <span title={name} key={index}>
+        {iso_3166_1}
+      </span>
+      {index < countries.length - 1 && ', '}
+    </>
+  ));
 };
 
 const FilmDetail = ({ data }) => {
@@ -37,13 +45,13 @@ const FilmDetail = ({ data }) => {
           </div>
 
           <div>Rating: {info.vote_average}</div>
-          <div>Genre: {info.genres && getGenresTexts(info.genres)}</div>
-          <div>Tagline: {info.tagline}</div>
-          <div>
-            Country:{' '}
-            {info.production_companies &&
-              getCountry(info.production_companies) + ', '}
-          </div>
+          {info.genres.length && (
+            <div>Genre: {getGenresTexts(info.genres)}</div>
+          )}
+          {info.tagline && <div>Tagline: {info.tagline}</div>}
+          {info.production_countries && (
+            <div>Country: {getCountries(info.production_countries)}</div>
+          )}
         </div>
       </div>
 
