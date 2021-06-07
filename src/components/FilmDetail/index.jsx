@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Flags from 'country-flag-icons/react/3x2';
 import { sendRequest } from '../../lib/apiService';
 import './style.css';
 
@@ -7,14 +8,21 @@ const getGenresTexts = (genres) => {
 };
 
 const getCountries = (countries) => {
-  return countries.map(({ iso_3166_1, name }, index) => (
-    <>
-      <span title={name} key={index}>
-        {iso_3166_1}
-      </span>
-      {index < countries.length - 1 && ', '}
-    </>
-  ));
+  return countries.map(({ iso_3166_1, name }, index) => {
+    const Flag = Flags[iso_3166_1];
+
+    return (
+      <div class="country">
+        {Flag ? (
+          <Flag title={name} className="country__flag" />
+        ) : (
+          <span title={name} key={index}>
+            {iso_3166_1}
+          </span>
+        )}
+      </div>
+    );
+  });
 };
 
 const FilmDetail = ({ data }) => {

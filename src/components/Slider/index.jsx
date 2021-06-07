@@ -31,6 +31,7 @@ const Slider = ({ min, minText, max, maxText, value, onSliderValChange }) => {
             min={min}
             max={max}
             value={val}
+            step={0.5}
             onChange={handleChange}
           />
         </div>

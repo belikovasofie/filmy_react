@@ -28,26 +28,20 @@ const QuizResults = () => {
   const fetchFilms = () => {
     sendRequest('discover/movie', {
       with_genres: genreNumber,
+      'vote_average.gte': rating,
     }).then((data) => {
       const pageCount = data.total_pages;
       const page = Math.floor(Math.random() * pageCount + 1);
 
       sendRequest('discover/movie', {
         with_genres: genreNumber,
+        'vote_average.gte': rating,
         page,
       }).then((data) => {
-        const allFilms = arrayShuffle(data.results);
+        const films = arrayShuffle(data.results);
 
-        if (rating) {
-          let films = allFilms.filter((film) => film.vote_average >= rating);
-          films = films.slice(0, RESULT_COUNT);
-          setResults(films);
-          setSelectedFilm(films[0]);
-        } else {
-          const films = allFilms.slice(0, RESULT_COUNT);
-          setResults(films);
-          setSelectedFilm(films[0]);
-        }
+        setResults(films);
+        setSelectedFilm(films[0]);
       });
     });
   };
@@ -79,9 +73,3 @@ const QuizResults = () => {
 };
 
 export default QuizResults;
-
-/* <button onClick={window.location.reload()}>Další</button> 
-
-<button onClick={window.location.reload()}>Další</button>
-
-*/

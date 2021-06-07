@@ -9,7 +9,7 @@ const Test = ({ onSubmit }) => {
   const [genrePicked, setGenrePicked] = useState(null);
   const [showButton, setShowButton] = useState(false);
   const [showSlider, setShowSlider] = useState(false);
-  const [sliderValue, setSliderValue] = useState(null);
+  const [sliderValue, setSliderValue] = useState(6);
 
   const onSliderValChange = (value) => {
     setSliderValue(value);
@@ -40,14 +40,17 @@ const Test = ({ onSubmit }) => {
       </div>
 
       {showSlider && (
-        <Slider
-          onSliderValChange={onSliderValChange}
-          min={1}
-          minText="pohoda"
-          max={9}
-          maxText="nejlepší"
-          value={5}
-        />
+        <>
+          <Slider
+            onSliderValChange={onSliderValChange}
+            min={1}
+            minText="pohoda"
+            max={8}
+            maxText="nejlepší"
+            value={sliderValue}
+          />
+          {sliderValue <= 4 && <p>Pozor, může obsahovat „umělecký“ zážitek!</p>}
+        </>
       )}
       {showButton && (
         <button
