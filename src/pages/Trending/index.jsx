@@ -27,10 +27,11 @@ const TrendingMovies = () => {
   useEffect(fetchFilms, []);
 
   if (results === null) {
-    return <Loader />;
+    return <Loader fixed />;
   }
   const handleClick = (film) => {
     setSelectedFilm(film);
+    window.scrollTo({ top: 0, left: 0 });
   };
   return (
     <div className="results">

@@ -49,7 +49,7 @@ const QuizResults = () => {
   useEffect(fetchFilms, []);
 
   if (results === null) {
-    return <Loader />;
+    return <Loader fixed />;
   }
   const handleClick = (film) => {
     setSelectedFilm(film);

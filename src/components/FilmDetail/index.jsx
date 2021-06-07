@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Flags from 'country-flag-icons/react/3x2';
 import { sendRequest } from '../../lib/apiService';
 import './style.css';
+import Loader from '../Loader';
 
 const getGenresTexts = (genres) => {
   return genres.map((genre) => genre.name).join(', ');
@@ -27,10 +28,17 @@ const getCountries = (countries) => {
 
 const FilmDetail = ({ data }) => {
   const [info, setInfo] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    sendRequest(`movie/${data.id}`).then((data) => setInfo(data));
+    setIsLoading(true);
+    sendRequest(`movie/${data.id}`).then((data) => {
+      setInfo(data);
+      setIsLoading(false);
+    });
   }, [data]);
+
+  if (isLoading) return <Loader />;
   if (!info) return null;
 
   return (
