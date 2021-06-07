@@ -3,14 +3,20 @@
 }
 
 .filmDetail__summary {
-  padding: 20px;
+  padding: 30px;
+  background-color: #e1def8ff;
+  border-radius: 0 15px 15px 0;
+}
+
+.filmDetail__summary div:first-child {
+  font-weight: bold;
 }
 
 .film__name {
   margin: 10px auto;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1030px) {
   .filmDetail__summary {
     display: none;
   }
