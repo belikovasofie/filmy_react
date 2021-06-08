@@ -28,9 +28,10 @@ const Test = ({ onSubmit }) => {
       setShowButton(true);
     }
   };
+
   return (
     <div className="genre-picker">
-      <h4>Vyber obrázek:</h4>
+      <h3>Vyber obrázek:</h3>
       <div className="genre-picker__main">
         <GenrePicker
           onSelect={onSelect}

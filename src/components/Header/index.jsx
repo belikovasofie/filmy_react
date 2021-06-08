@@ -11,7 +11,7 @@ const Header = () => {
     const handleClick = () => setOpen(false);
 
     return (
-      <NavLink to={to} onClick={handleClick}>
+      <NavLink to={to} onClick={handleClick} activeClassName="is-active">
         {children}
       </NavLink>
     );

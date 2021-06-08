@@ -13,13 +13,11 @@ const getCountries = (countries) => {
     const Flag = Flags[iso_3166_1];
 
     return (
-      <div className="country">
+      <div className="country" key={index}>
         {Flag ? (
           <Flag title={name} className="country__flag" />
         ) : (
-          <span title={name} key={index}>
-            {iso_3166_1}
-          </span>
+          <span title={name}>{iso_3166_1}</span>
         )}
       </div>
     );

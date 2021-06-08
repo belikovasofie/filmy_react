@@ -11,14 +11,16 @@ const FilmGroup = ({ data, handleClick }) => {
           className="film-group"
           key={film.id}
         >
-          <img
-            className="film-group__image"
-            src={
-              film.poster_path
-                ? `https://image.tmdb.org/t/p/w92${film.poster_path}`
-                : require('../../img/movie_placeholder.png').default
-            }
-          />
+          <div>
+            <img
+              className="film-group__image"
+              src={
+                film.poster_path
+                  ? `https://image.tmdb.org/t/p/w92${film.poster_path}`
+                  : require('../../img/movie_placeholder.png').default
+              }
+            />
+          </div>
           <h3>
             {film.title}
             {film.release_date && ` (${film.release_date.slice(0, 4)})`}{' '}
