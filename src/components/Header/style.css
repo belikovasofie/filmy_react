@@ -48,6 +48,9 @@ header {
   color: #1f156b;
   font-weight: bold;
   font-size: 25px;
+  font-family: 'Hepta Slab', serif;
+  font-weight: 400;
+
   /* font-family: 'Lato', sans-serif; ----------------*/
 }
 
