@@ -10,18 +10,19 @@ const Homepage = () => {
       </div>
       <div className="content__right">
         <p className="content__text">
-          Za poslední rok čím dál tím víc lidí sleduje filmy a seriály. Spousta
-          z nás si vybírá stále stejné a najít něco nového nebývá snadné. Naše
-          aplikace nabídne uživateli možnost vyhledávání filmů podle zadaných
-          kritérií ale taky náhodnější výběr prostřednictvím zábavného kvízu.
+          Dej si film! je aplikace, která ti doporučí film podle tvé momentální
+          nálady. Obrázky tě dovedou k seznamu filmů, který se sestaví přímo pro
+          tebe. Obrázky se pokaždé mění a tvůj výběr nebude nikdy stejný.
+          Informace o filmech aplikace čerpá z{' '}
+          <a href="https://www.imdb.com/">IMDb</a>. K detailnějším informacím se
+          dostaneš přes odkaz u každého filmu.
         </p>
         <p className="content__text">
-          Setkaly jsme se na DA web a padly si do oka. Obě rády koukáme na
-          filmy, napadlo nás vytvořit aplikaci, která by uživateli pomohla s
-          výběrem filmu. Přejeme si, aby se Vám naše apka líbila a pokud bude
-          mít úspěch, budeme ji dál vylepšovat
+          Hledání podle kritérií nebo formulář u nás nehledej. Na to ti
+          doporučujeme zkusit{' '}
+          <a href="https://www.csfd.cz/podrobne-vyhledavani/">CSFD</a> . Pokud
+          se ti aplikace líbí, napiš Evě nebo Sofi.
         </p>
-        <p>Eva a Sofye </p>
       </div>
     </main>
   );

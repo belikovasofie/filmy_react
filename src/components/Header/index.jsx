@@ -28,8 +28,8 @@ const Header = () => {
         </div>
         <div className="topbar__navigation">
           <nav className="navigation">
-            <Link to="/quiz">Kvíz</Link>
-            <Link to="/trending">TRENDY</Link>
+            <Link to="/quiz">Nálada</Link>
+            <Link to="/trending">Novinky</Link>
           </nav>
         </div>
         <nav
@@ -37,8 +37,8 @@ const Header = () => {
             isOpen ? 'topbar__mobile-nav is-open' : 'topbar__mobile-nav'
           }
         >
-          <Link to="/quiz">Kvíz</Link>
-          <Link to="/trending">TRENDY</Link>
+          <Link to="/quiz">Nálada</Link>
+          <Link to="/trending">Novinky</Link>
         </nav>
         <div className="topbar__hamburger">
           <Hamburger toggled={isOpen} toggle={setOpen} color="#1f156b" />
