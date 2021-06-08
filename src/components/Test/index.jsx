@@ -45,17 +45,17 @@ const Test = ({ onSubmit }) => {
           <Slider
             onSliderValChange={onSliderValChange}
             min={1}
-            minText="pohoda"
+            minText="-"
             max={8}
-            maxText="nejlepší"
+            maxText="+"
             value={sliderValue}
           />
-          {sliderValue <= 4 && <p>Pozor, může obsahovat „umělecký“ zážitek!</p>}
+          {sliderValue <= 4 && <p>Pozor, může obsahovat „nevšední“ zážitek!</p>}
         </>
       )}
       {showButton && (
         <button
-          className="btn"
+          className="btn btn--send"
           onClick={() => onSubmit(genrePicked, sliderValue)}
           disabled={[1, 2, 3, 4, 5, 6].includes(genrePicked)}
         >

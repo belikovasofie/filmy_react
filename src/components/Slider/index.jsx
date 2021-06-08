@@ -15,7 +15,7 @@ const Slider = ({ min, minText, max, maxText, value, onSliderValChange }) => {
 
   return (
     <>
-      <h4>Uživatelské hodnocení</h4>
+      <h4 className="slider__name">Uživatelské hodnocení:</h4>
       <div className="slider">
         <div className="slider__min">{minText}</div>
         <div className="slider__control">
