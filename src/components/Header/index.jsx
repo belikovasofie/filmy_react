@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
-import camera from '../../img/camera.png';
 import './style.css';
 
 const Header = () => {
@@ -22,7 +21,7 @@ const Header = () => {
       <div className="topbar">
         <div className="topbar__logo">
           <Link to="/">
-            <img src={camera} className="topbar__pict" />
+            <img src="assets/camera.png" className="topbar__pict" />
             <div className="topbar__name">DEJ SI FILM</div>
           </Link>
         </div>
