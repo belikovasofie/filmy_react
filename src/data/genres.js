@@ -264,7 +264,7 @@ const genreGroups = [
       {
         id: 16,
         name: 'animation',
-        image: ['assets/genres/16-animation/1.jpg'],
+        image: ['assets/genres/16-animation/1.jpeg'],
       },
     ],
   },
