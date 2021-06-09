@@ -209,7 +209,7 @@ const genreGroups = [
           'assets/genres/37-history/1.jpeg',
           'assets/genres/37-history/1.jpg',
           'assets/genres/37-history/2.jpg',
-          'assets/genres/37-history/1.png',
+          'assets/genres/37-history/2.png',
           'assets/genres/37-history/3.jpg',
           'assets/genres/37-history/3.jpeg',
           'assets/genres/37-history/4.jpg',
@@ -264,7 +264,7 @@ const genreGroups = [
       {
         id: 16,
         name: 'animation',
-        image: ['assets/genres/16-animation/1.jpeg'],
+        image: ['assets/genres/16-animation/1.jpg'],
       },
     ],
   },
