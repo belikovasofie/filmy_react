@@ -17,7 +17,7 @@ const FilmGroup = ({ data, handleClick }) => {
               src={
                 film.poster_path
                   ? `https://image.tmdb.org/t/p/w92${film.poster_path}`
-                  : 'assets/placeholder.png'
+                  : '/assets/placeholder.png'
               }
             />
           </div>

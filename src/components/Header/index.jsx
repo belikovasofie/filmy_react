@@ -21,7 +21,7 @@ const Header = () => {
       <div className="topbar">
         <div className="topbar__logo">
           <Link to="/">
-            <img src="assets/camera.png" className="topbar__pict" />
+            <img src="/assets/camera.png" className="topbar__pict" />
             <div className="topbar__name">DEJ SI FILM</div>
           </Link>
         </div>
