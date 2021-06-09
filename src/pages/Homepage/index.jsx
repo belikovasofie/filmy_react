@@ -13,8 +13,7 @@ const Homepage = () => {
           Dej si film! je aplikace, která ti doporučí film podle tvé momentální
           nálady. Obrázky tě dovedou k seznamu filmů, který se sestaví přímo pro
           tebe. Obrázky se pokaždé mění a tvůj výběr nebude nikdy stejný.
-          Informace o filmech aplikace čerpá z{' '}
-          <a href="https://www.imdb.com/">IMDb</a>. K detailnějším informacím se
+          Informace o filmech aplikace čerpá z API. K detailnějším informacím se
           dostaneš přes odkaz u každého filmu.
         </p>
         <p className="content__text">
