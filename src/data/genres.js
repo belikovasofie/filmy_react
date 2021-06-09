@@ -220,7 +220,7 @@ const genreGroups = [
   },
   {
     id: 5,
-    name: 'scifiFantasy',
+    name: 'scifiFantasyAnimation',
     image: [
       'assets/groups/scifi/scifi1.webp',
       'assets/groups/scifi/scifi2.webp',
@@ -232,6 +232,7 @@ const genreGroups = [
       'assets/groups/scifi/scifi9.webp',
       'assets/groups/scifi/scifi10.webp',
       'assets/groups/scifi/scifi11.jpg',
+      'assets/groups/scifi/scifi12.jpeg',
     ],
     genreIds: [
       {
@@ -259,6 +260,11 @@ const genreGroups = [
           'assets/genres/878-Fantasy/3.jpg',
           'assets/genres/878-Fantasy/4.webp',
         ],
+      },
+      {
+        id: 16,
+        name: 'animation',
+        image: ['assets/genres/16-animation/1.jpeg'],
       },
     ],
   },
