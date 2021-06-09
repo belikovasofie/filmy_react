@@ -1,6 +1,7 @@
 body {
   line-height: 2;
-  font-family: 'Cantora One', sans-serif;
+  /* font-family: 'Cantora One',serif; */
+  font-family: serif;
   font-size: 20px;
 }
 
@@ -44,11 +45,12 @@ header {
   color: #1f156b;
   font-weight: bold;
   font-size: 25px;
-  font-family: 'Hepta Slab', serif;
 
   /* font-family: 'Lato', sans-serif; ----------------*/
 }
-
+.topbar {
+  font-family: 'Hepta Slab', serif;
+}
 .navigation a {
   /* font-family: 'Lato', sans-serif; -----------------*/
   display: inline-block;
