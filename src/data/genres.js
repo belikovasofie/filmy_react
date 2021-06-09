@@ -68,7 +68,7 @@ const genreGroups = [
     genreIds: [
       {
         id: 35,
-        name: 'relax',
+        name: 'comedy',
 
         image: [
           'assets/genres/35-relax/1.jpeg',
@@ -79,7 +79,7 @@ const genreGroups = [
       },
       ,
       {
-        id: 10751,
+        id: 10749,
         name: 'romance',
         image: [
           'assets/genres/10751-romance/1.jpg',
@@ -93,7 +93,7 @@ const genreGroups = [
         ],
       },
       {
-        id: 10749,
+        id: 10751,
         name: 'family',
         image: [
           'assets/genres/10749-family/1.jpg',
@@ -177,7 +177,7 @@ const genreGroups = [
     ],
     genreIds: [
       {
-        id: 36,
+        id: 10752,
         name: 'war',
         image: [
           'assets/genres/36-war/1.jpeg',
@@ -189,7 +189,7 @@ const genreGroups = [
         ],
       },
       {
-        id: 10752,
+        id: 37,
         name: 'western',
         image: [
           'assets/genres/10752-western/1.jpg',
@@ -203,7 +203,7 @@ const genreGroups = [
         ],
       },
       {
-        id: 37,
+        id: 36,
         name: 'history',
         image: [
           'assets/genres/37-history/1.jpeg',
@@ -235,7 +235,7 @@ const genreGroups = [
     ],
     genreIds: [
       {
-        id: 14,
+        id: 878,
         name: 'Science Fiction',
         image: [
           'assets/genres/14-ScienceFiction/1.jpg',
@@ -249,7 +249,7 @@ const genreGroups = [
         ],
       },
       {
-        id: 878,
+        id: 14,
         name: 'Fantasy',
         image: [
           'assets/genres/878-Fantasy/1.jpg',
