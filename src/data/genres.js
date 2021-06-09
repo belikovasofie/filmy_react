@@ -74,7 +74,7 @@ const genreGroups = [
           'assets/genres/35-relax/1.jpeg',
           'assets/genres/35-relax/2.jpeg',
           'assets/genres/35-relax/3.jpeg',
-          'assets/genres/35-relax/3.jpg',
+          'assets/genres/35-relax/4.jpg',
         ],
       },
       ,
