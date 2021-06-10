@@ -1,22 +1,32 @@
 .results {
-  display: flex;
 }
 
 .results__detail {
-  flex: 2;
+  padding: 30px;
+  padding-right: calc(33% + 20px);
 }
 
 .results__group {
-  flex: 1;
-  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 33%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 80px 20px 20px;
+  background: #eee;
 }
 
 .btn-center {
   margin: auto 120px;
 }
 
-@media screen and (max-width: 640px) {
-  .results {
-    flex-direction: column;
+@media screen and (max-width: 760px) {
+  .results__group {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background: transparent;
   }
 }

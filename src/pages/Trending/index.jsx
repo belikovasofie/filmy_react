@@ -34,11 +34,11 @@ const TrendingMovies = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
   return (
-    <div className="results">
-      <div className="results__detail">
+    <div className="trending">
+      <div className="trending__detail">
         {selectedFilm && <FilmDetail data={selectedFilm} />}
       </div>
-      <div className="results__group">
+      <div className="trending__group">
         <FilmGroup handleClick={handleClick} data={results.slice(1)} />
       </div>
     </div>

@@ -71,8 +71,8 @@ const FilmDetail = ({ data }) => {
 
       <p>
         {info.overview}{' '}
-        {info && (
-          <a href={`http://imdb.com/title/${info.imdb_id}`}> Read more ...</a>
+        {info.imdb_id && (
+          <a href={`http://imdb.com/title/${info.imdb_id}`} target="_blank"> Read more ...</a>
         )}
       </p>
     </div>

@@ -17,8 +17,10 @@
 
 .btn {
   background-color: #e1def8ff;
-  padding: 50px;
+  padding: 7px;
   border-radius: 7px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .btn--send {

@@ -3,6 +3,7 @@
 }
 
 .filmDetail__summary {
+  flex: 1;
   padding: 30px;
   background-color: #e1def8ff;
   border-radius: 0 15px 15px 0;
@@ -33,5 +34,11 @@
 }
 
 .filmDetail__item img {
-  width: 100%;
+  max-width: 60%;
+}
+
+@media (max-width: 640px) {
+  .filmDetail__item img {
+    max-width: 100%;
+  } 
 }

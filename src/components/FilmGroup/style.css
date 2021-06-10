@@ -1,5 +1,6 @@
 .film-group {
   display: flex;
+  align-items: center;
   gap: 15px;
   margin: 10px 0 10px 0;
 }
@@ -7,4 +8,9 @@
 .film-group__image {
   width: 92px;
   cursor: pointer;
+}
+
+.film-group h3 {
+  font-size: 18px;
+  line-height: 1.8;
 }

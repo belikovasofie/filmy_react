@@ -25,17 +25,19 @@ const QuizResults = () => {
 
   const rating = parseRating(search);
 
-  const fetchFilms = () => {
-    sendRequest('discover/movie', {
+  const requestOptions = {
       with_genres: genreNumber,
       'vote_average.gte': rating,
-    }).then((data) => {
+      include_adult: 0
+    }
+
+  const fetchFilms = () => {
+    sendRequest('discover/movie', requestOptions).then((data) => {
       const pageCount = data.total_pages;
       const page = Math.floor(Math.random() * pageCount + 1);
 
       sendRequest('discover/movie', {
-        with_genres: genreNumber,
-        'vote_average.gte': rating,
+        ...requestOptions,
         page,
       }).then((data) => {
         const films = arrayShuffle(data.results);

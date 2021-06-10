@@ -22,15 +22,15 @@ header {
 
 .topbar__navigation {
   display: none;
+  margin-left: auto;
 }
 
 .topbar__logo {
-  flex: 1;
+
 }
 
 .topbar__logo a {
   display: flex;
-  justify-content: left;
   align-items: center;
   text-decoration: none;
 }
@@ -71,6 +71,10 @@ header {
 
 /* Hamburger menu */
 
+.topbar__hamburger {
+  margin-left: auto;
+}
+
 .topbar__mobile-nav {
   display: none;
   position: fixed;
@@ -90,6 +94,15 @@ header {
 .topbar__mobile-nav a {
   display: block;
   margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.topbar__mobile-nav a:active {
+  color: #1f156b;
+}
+
+.topbar__mobile-nav a.is-active {
+  text-decoration: underline;
 }
 
 /* ----------- PRO MAIN ----------*/
