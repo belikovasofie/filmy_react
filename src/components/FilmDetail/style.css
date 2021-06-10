@@ -19,12 +19,6 @@
   margin: 10px auto;
 }
 
-@media screen and (max-width: 1030px) {
-  .filmDetail__summary {
-    display: none;
-  }
-}
-
 .country {
   display: inline-block;
   margin-right: 8px;
@@ -38,7 +32,16 @@
   max-width: 60%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
+  .filmDetail__item {
+    display: block;
+    background: transparent;
+  }
+
+  .filmDetail__summary {
+    padding: 20px 0;
+  }
+
   .filmDetail__item img {
     max-width: 100%;
   }
