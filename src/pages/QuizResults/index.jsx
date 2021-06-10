@@ -26,10 +26,18 @@ const QuizResults = () => {
   const rating = parseRating(search);
 
   const requestOptions = {
-      with_genres: genreNumber,
-      'vote_average.gte': rating,
-      include_adult: 0
-    }
+    with_genres: genreNumber,
+    'vote_average.gte': rating,
+    include_adult: 0,
+  };
+
+  if (rating >= 6.5) {
+    requestOptions['vote_count.gte'] = 2;
+  }
+
+  if (rating >= 8) {
+    requestOptions['vote_count.gte'] = 5;
+  }
 
   const fetchFilms = () => {
     sendRequest('discover/movie', requestOptions).then((data) => {
