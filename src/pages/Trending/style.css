@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 760px) {
+  .trending__detail {
+    padding: 20px;
+  }
+
   .trending__group {
     position: static;
     width: auto;
