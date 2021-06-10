@@ -3,16 +3,16 @@
 
 .trending__detail {
   padding: 30px;
-  padding-right: calc(33% + 20px);
+  padding-right: calc(30% + 20px);
 }
 
 .trending__group {
   position: fixed;
   top: 0;
   right: 0;
-  width: 33%;
+  width: 30%;
   height: 100vh;
-  overflow-y: auto;
+  overflow: hidden auto;
   padding: 80px 20px 20px;
   background: #eee;
 }

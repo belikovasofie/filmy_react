@@ -23,6 +23,7 @@ const Test = ({ onSubmit }) => {
         setCurrenGenres(group.genreIds);
         setShowButton(true);
         setShowSlider(true);
+        window.scrollTo({ top: 0, left: 0 });
       }, 1000);
     } else {
       setShowButton(true);
