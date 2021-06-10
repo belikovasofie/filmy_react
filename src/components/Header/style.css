@@ -26,7 +26,6 @@ header {
 }
 
 .topbar__logo {
-
 }
 
 .topbar__logo a {
@@ -45,6 +44,7 @@ header {
   color: #1f156b;
   font-weight: bold;
   font-size: 25px;
+  white-space: nowrap;
 
   /* font-family: 'Lato', sans-serif; ----------------*/
 }
