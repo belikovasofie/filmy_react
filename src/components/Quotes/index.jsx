@@ -3,7 +3,7 @@ import './style.css';
 import { quotes } from './quotes';
 
 const Quote = () => {
-  const cislo = Math.floor(Math.random() * quotes.length) + 1;
+  const cislo = Math.floor(Math.random() * quotes.length);
 
   return (
     <div className="quote__element">
