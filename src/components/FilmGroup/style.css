@@ -6,4 +6,5 @@
 
 .film-group__image {
   width: 92px;
+  cursor: pointer;
 }
