@@ -181,11 +181,11 @@ const genreGroups = [
         name: 'war',
         image: [
           'assets/genres/36-war/1.jpeg',
-          'assets/genres/36-war/2.jpg',
-          'assets/genres/36-war/2.jpg',
+          'assets/genres/36-war/1.jpg',
           'assets/genres/36-war/2.jpeg',
-          'assets/genres/36-war/3.jpg',
+          'assets/genres/36-war/2.jpg',
           'assets/genres/36-war/3.jpeg',
+          'assets/genres/36-war/3.jpg',
         ],
       },
       {
@@ -264,7 +264,16 @@ const genreGroups = [
       {
         id: 16,
         name: 'animation',
-        image: ['assets/genres/16-animation/1.jpeg'],
+        image: [
+          'assets/genres/16-animation/1.jpeg',
+          'assets/genres/16-animation/2.jpeg',
+          'assets/genres/16-animation/3.jpeg',
+          'assets/genres/16-animation/4.jpeg',
+          'assets/genres/16-animation/5.jpeg',
+          'assets/genres/16-animation/6.jpeg',
+          'assets/genres/16-animation/7.jpeg',
+          'assets/genres/16-animation/8.jpeg',
+        ],
       },
     ],
   },
