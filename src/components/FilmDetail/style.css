@@ -1,5 +1,6 @@
 .filmDetail__item {
   display: flex;
+  align-items: flex-start;
 }
 
 .filmDetail__summary {
@@ -40,5 +41,5 @@
 @media (max-width: 640px) {
   .filmDetail__item img {
     max-width: 100%;
-  } 
+  }
 }
