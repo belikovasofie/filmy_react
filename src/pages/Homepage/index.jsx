@@ -19,8 +19,9 @@ const Homepage = () => {
         <p className="content__text">
           Hledání podle kritérií nebo formulář u nás nehledej. Na to ti
           doporučujeme zkusit{' '}
-          <a href="https://www.csfd.cz/podrobne-vyhledavani/">CSFD</a> . Pokud
-          se ti aplikace líbí, napiš Evě nebo Sofi.
+          <a href="https://www.csfd.cz/podrobne-vyhledavani/">CSFD</a>. Můžeš se
+          třeba podívat na filmové NOVINKY. Pokud se ti aplikace líbí, napiš Evě
+          nebo Sofi.
         </p>
       </div>
     </main>
