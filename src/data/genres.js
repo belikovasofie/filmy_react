@@ -314,7 +314,7 @@ const genreGroups = [
           'assets/genres/53-thriller/4.jpg',
           'assets/genres/53-thriller/5.jpg',
           'assets/genres/53-thriller/6.jpeg',
-          'assets/genres/53-thriller/7.jpg',
+          'assets/genres/53-thriller/7.jpeg',
           'assets/genres/53-thriller/8.jpeg',
         ],
       },

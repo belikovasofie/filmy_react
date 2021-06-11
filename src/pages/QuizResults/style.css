@@ -8,16 +8,14 @@
   top: 0;
   right: 0;
   width: 30%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   overflow: hidden auto;
   padding: 80px 20px 20px;
   background: #eee;
 }
 
 .btn-center {
-  width: 30%;
-  position: absolute;
-  left: calc(50% - 75px);
+  margin: auto 120px;
 }
 
 @media screen and (max-width: 760px) {

@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: 50px;
   padding-bottom: 50px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .genre-picker h3 {
@@ -18,15 +18,15 @@
 
 .btn {
   background-color: #e1def8ff;
-  padding: 15px;
+  padding: 7px;
   border-radius: 7px;
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn--send {
   margin: 20px auto;
   position: absolute;
-  left: calc(50% - 60px);
+  left: calc(50% - 73px);
   margin-bottom: 30px;
 }
