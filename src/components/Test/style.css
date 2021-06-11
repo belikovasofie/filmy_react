@@ -18,15 +18,15 @@
 
 .btn {
   background-color: #e1def8ff;
-  padding: 10px;
+  padding: 7px;
   border-radius: 7px;
-  margin: 20px auto;
+  margin: 20px;
   font-size: 16px;
 }
 
 .btn--send {
-  margin: 20px auto;
+  margin: 0px auto;
   position: absolute;
-  left: calc(50% - 73px);
+  left: calc(50% - 63px);
   margin-bottom: 30px;
 }
