@@ -74,7 +74,7 @@ const QuizResults = () => {
         <div className="results__group">
           <FilmGroup handleClick={handleClick} data={results.slice(1)} />
           <button className="btn btn-center" onClick={() => fetchFilms()}>
-            Prohlédnout další
+            Další filmy
           </button>
         </div>
       </div>

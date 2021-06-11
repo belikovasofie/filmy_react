@@ -15,9 +15,9 @@
 }
 
 .btn-center {
-  width: 60%;
+  width: 30%;
   position: absolute;
-  left: calc(50% - 90px);
+  left: calc(50% - 75px);
 }
 
 @media screen and (max-width: 760px) {
