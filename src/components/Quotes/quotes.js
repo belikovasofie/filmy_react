@@ -67,12 +67,7 @@ export const quotes = [
     quote: 'Listen to them.  Children of the night.  What music they make.',
     movie: 'Dracula (1931)',
   },
-  {
-    id: '14',
-    quote:
-      'Listen to me, mister. You´re my knight in shining armor.  Don´t you forget it.  You´re going to get back on that horse, and I´m going to be right behind you, holding on tight, and away we´re gonna , go, go!',
-    movie: 'On Golden Pond (1981)',
-  },
+
   {
     id: '15',
     quote: 'A martini.  Shaken, not stirred.',
@@ -586,7 +581,7 @@ export const quotes = [
     movie: 'Knoflíkáři (1997)',
   },
   {
-    id: '115',
+    id: '14',
     quote: 'Ich habe gesagt. Ich habe gesagt! Ich habe gesagt!!!',
     movie: 'Škola základ života (1938)',
   },

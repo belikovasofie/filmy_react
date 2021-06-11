@@ -32,6 +32,9 @@
 .filmDetail__item img {
   max-width: 60%;
 }
+.readMore {
+  color: #1f156b;
+}
 
 @media (max-width: 760px) {
   .filmDetail__item {

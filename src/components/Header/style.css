@@ -50,13 +50,13 @@ header {
 }
 
 .navigation a {
-  /* font-family: 'Lato', sans-serif; -----------------*/
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 35px;
   color: #1f156b;
   font-size: 25px;
+  font-family: 'Hepta Slab', serif;
 }
 
 .navigation a:hover {
@@ -64,6 +64,10 @@ header {
 }
 
 .navigation a.is-active {
+  text-decoration: underline;
+}
+
+.topbar__logo a:hover {
   text-decoration: underline;
 }
 
@@ -80,6 +84,8 @@ header {
   background-color: #f4f3ff;
   padding: 20px;
   font-size: 30px;
+  font-family: 'Hepta Slab', serif;
+  text-transform: uppercase;
 }
 .topbar__mobile-nav.is-open {
   display: block;

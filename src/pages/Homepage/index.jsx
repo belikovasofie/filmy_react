@@ -10,7 +10,7 @@ const Homepage = () => {
       </div>
       <div className="content__right">
         <p className="content__text">
-          Dej si film! je aplikace, která ti doporučí film podle tvé momentální
+          DEJ SI FILM je aplikace, která ti doporučí film podle tvé momentální
           nálady. Obrázky tě dovedou k seznamu filmů, který se sestaví přímo pro
           tebe. Obrázky se pokaždé mění a tvůj výběr nebude nikdy stejný.
           Informace o filmech aplikace čerpá z API. K detailnějším informacím se
